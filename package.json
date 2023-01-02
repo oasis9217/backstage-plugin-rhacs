@@ -1,0 +1,29 @@
+{
+  "name": "root",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">=18",
+    "yarn": "~1.22.19"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^6.3.0",
+    "prettier": "^2.8.1",
+    "@typescript-eslint/eslint-plugin": "^5.47.1",
+    "@typescript-eslint/parser": "^5.47.1",
+    "eslint": "^8.31.0",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.1.0"
+  },
+  "scripts": {
+    "style:lint": "eslint packages --ext .ts",
+    "style:prettier": "prettier \"packages/**/*.ts\" --list-different --write",
+    "build": "npx lerna run build",
+    "prepare": "husky install"
+  }
+}

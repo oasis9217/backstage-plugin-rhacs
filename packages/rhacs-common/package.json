@@ -1,0 +1,33 @@
+{
+  "name": "@oasis9217/backstage-plugin-rhacs-common",
+  "version": "0.0.1",
+  "description": "Backstage plugin for Red Hat Advanced Cluster Security",
+  "main": "dist/index.cjs.js",
+  "types": "dist/index.d.ts",
+  "author": "Songhui Ryu",
+  "license": "MIT",
+  "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
+  "backstage": {
+    "role": "common-library"
+  },
+  "scripts": {
+    "start": "backstage-cli package start",
+    "compile": "tsc",
+    "build": "yarn compile && backstage-cli package build",
+    "lint": "backstage-cli package lint",
+    "test": "backstage-cli package test",
+    "clean": "backstage-cli package clean",
+    "prepack": "backstage-cli package prepack",
+    "postpack": "backstage-cli package postpack"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@backstage/cli": "^0.22.0"
+  },
+  "files": [
+    "dist"
+  ]
+}
