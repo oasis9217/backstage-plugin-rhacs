@@ -23,7 +23,6 @@
     "prepack": "backstage-cli package prepack",
     "postpack": "backstage-cli package postpack"
   },
-  "dependencies": {},
   "devDependencies": {
     "@backstage/cli": "^0.22.0"
   },
